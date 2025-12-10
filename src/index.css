@@ -15,7 +15,7 @@
     --popover: 220 18% 10%;
     --popover-foreground: 45 20% 95%;
 
-    --primary: 38 92% 50%;
+    --primary: 217 91% 60%;
     --primary-foreground: 220 20% 6%;
 
     --secondary: 220 15% 15%;
@@ -24,7 +24,7 @@
     --muted: 220 15% 18%;
     --muted-foreground: 220 10% 55%;
 
-    --accent: 38 92% 50%;
+    --accent: 217 91% 60%;
     --accent-foreground: 220 20% 6%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,25 +32,25 @@
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;
-    --ring: 38 92% 50%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    --gradient-gold: linear-gradient(135deg, hsl(38, 92%, 50%), hsl(28, 90%, 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(217, 91%, 70%));
     --gradient-dark: linear-gradient(180deg, hsl(220, 20%, 6%), hsl(220, 18%, 10%));
     --gradient-card: linear-gradient(145deg, hsl(220, 18%, 12%), hsl(220, 18%, 8%));
 
-    --shadow-glow: 0 0 60px hsl(38, 92%, 50%, 0.15);
+    --shadow-glow: 0 0 60px hsl(217, 91%, 60%, 0.15);
     --shadow-card: 0 10px 40px -10px hsl(0, 0%, 0%, 0.5);
 
     --sidebar-background: 220 18% 10%;
     --sidebar-foreground: 45 20% 95%;
-    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 220 20% 6%;
     --sidebar-accent: 220 15% 18%;
     --sidebar-accent-foreground: 45 20% 95%;
     --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 38 92% 50%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -114,7 +114,7 @@
 
   .hover-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px -15px hsl(38, 92%, 50%, 0.2);
+    box-shadow: 0 20px 40px -15px hsl(217, 91%, 60%, 0.2);
   }
 
   .link-underline {
