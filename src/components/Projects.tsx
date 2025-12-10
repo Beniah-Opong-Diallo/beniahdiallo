@@ -9,6 +9,7 @@ const Projects = () => {
       icon: QrCode,
       date: "Nov-Dec 2025",
       featured: true,
+      githubUrl: "https://github.com/Beniah-Opong-Diallo/SafePick",
     },
     {
       title: "DatSer",
@@ -17,6 +18,7 @@ const Projects = () => {
       icon: Search,
       date: "Nov 2025",
       featured: true,
+      githubUrl: "https://github.com/Beniah-Opong-Diallo/DatSer",
     },
     {
       title: "Check-In Form",
@@ -33,6 +35,7 @@ const Projects = () => {
       icon: ListTodo,
       date: "Sep 2024",
       featured: false,
+      githubUrl: "https://github.com/Beniah-Opong-Diallo/TODO-APP-DemoDay",
     },
     {
       title: "React Contacts App",
@@ -41,6 +44,7 @@ const Projects = () => {
       icon: Users,
       date: "Apr 2024",
       featured: false,
+      githubUrl: "https://github.com/Beniah-Opong-Diallo/react-contacts-app",
     },
   ];
 
@@ -67,7 +71,12 @@ const Projects = () => {
             {featuredProjects.map((project, index) => (
               <div
                 key={project.title}
-                className="group bg-gradient-card rounded-2xl border border-border overflow-hidden hover-lift"
+                className="group bg-gradient-card rounded-2xl border border-border overflow-hidden hover-lift cursor-pointer"
+                onClick={() => {
+                  if (project.githubUrl) {
+                    window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+                  }
+                }}
               >
                 {/* Project Header */}
                 <div className="p-8">
@@ -104,7 +113,12 @@ const Projects = () => {
             {otherProjects.map((project, index) => (
               <div
                 key={project.title}
-                className="group bg-card rounded-xl border border-border p-6 hover:border-primary/50 transition-all duration-300"
+                className="group bg-card rounded-xl border border-border p-6 hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                onClick={() => {
+                  if (project.githubUrl) {
+                    window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+                  }
+                }}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-secondary border border-border flex items-center justify-center group-hover:border-primary/50 transition-colors">
